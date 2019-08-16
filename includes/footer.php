@@ -1,5 +1,5 @@
 <!--<div class="row" style="background-color: yellow; height: 300px; margin-bottom: 0 !important; width: 100%;">-->
-<div class="col-md-12">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div class="jumbotron" id="footer">
         <p class="text-center">Developed/Designed By Buwaneka Sudheera Thisarasinghe</p>
     </div>

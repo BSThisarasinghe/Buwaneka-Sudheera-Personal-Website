@@ -63,10 +63,6 @@ body{
     padding-left: 50px;
     margin-top: 450px;
     position: fixed;
-    /*position: absolute;*/
-    /*top: 450px;*/
-    /*left: 70px;*/
-    /*z-index: 0;*/
 }
 
 #getToKnowMe{
@@ -254,12 +250,15 @@ body{
 
 .hello {display: none}
 
-/*.dateGap{*/
-    /*background-color: #F50A4A;*/
-    /*color: #ffffff;*/
-/*}*/
+.dateGap1{
+    text-align: right;
+}
 
-.dateGap span{
+.dateGap2{
+    text-align: left;
+}
+
+.dateGap1 span{
     font-size: 15pt;
     font-weight: 700;
 }
@@ -341,6 +340,7 @@ body{
     margin-bottom: 0 !important;
     border-radius: 0;
     background-color: #3B3B3B;
+    height: 120px;
 }
 
 #footer p{
@@ -349,28 +349,185 @@ body{
     font-size: 10pt;
 }
 
-@media only screen and (max-width: 1200px) and (min-width: 600px)  {
+#contactDetails{
+    padding-left: 150px;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 980px)  {
     #myTechnicalInfo{
         padding-left: 50px !important;
         padding-right: 50px !important;
         /*background-color: yellow;*/
     }
 
-    .parent {
-        width: 340px;
-        margin: 10px;
-        height: 350px;
-        border: 1px solid blue;
+    #projectRow{
+        /*background-color: yellow;*/
+    }
+
+    #aboutMe{
+        /*background-color: yellow;*/
+    }
+
+    #background_container2{
+        position: absolute;
+        top: 4800px;
+        /*margin-top: 2000px;*/
+        width: 110%;
+        height:620px;
         overflow: hidden;
-        position: relative;
-        float: left;
-        display: inline-block;
-        cursor: pointer;
-        background-color: yellow;
+        /*z-index: -1;*/
+        /*background-color: transparent !important;*/
+    }
+
+    #contact{
+        background-color: #ffffff;
+        position: absolute;
+        top: 5400px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #contactDetails{
+        padding-left: 50px !important;
+        margin-bottom: 50px;
     }
 }
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 980px) and (min-width: 765px) {
+
+    #myTechnicalInfo{
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+        /*background-color: yellow;*/
+    }
+
+    #projectRow{
+        /*background-color: yellow;*/
+    }
+
+    #aboutMe{
+        /*background-color: yellow;*/
+    }
+
+    #background_container2{
+        position: absolute;
+        top: 5100px;
+        /*margin-top: 2000px;*/
+        width: 110%;
+        height:620px;
+        overflow: hidden;
+        /*z-index: -1;*/
+        /*background-color: transparent !important;*/
+    }
+
+    #contact{
+        background-color: #ffffff;
+        position: absolute;
+        top: 5700px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #footer{
+        margin-bottom: 0 !important;
+        border-radius: 0;
+        background-color: #3B3B3B;
+        height: 120px;
+    }
+
+    #footer p{
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 10pt;
+    }
+
+    #aboutMe{
+        /*background-color: orange;*/
+    }
+
+    #linkContainer{
+        padding-left: 50px;
+        margin-top: 500px;
+        position: fixed;
+        /*position: absolute;*/
+        /*top: 450px;*/
+        /*left: 70px;*/
+        /*z-index: 0;*/
+    }
+
+    #contactDetails{
+        padding-left: 50px !important;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 765px) and (min-width: 700px) {
+
+    #myTechnicalInfo{
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+        /*background-color: yellow;*/
+    }
+
+    #projectRow{
+        /*background-color: yellow;*/
+    }
+
+    #aboutMe{
+        /*background-color: yellow;*/
+    }
+
+    #background_container2{
+        position: absolute;
+        top: 5400px;
+        /*margin-top: 2000px;*/
+        width: 110%;
+        height:620px;
+        overflow: hidden;
+        /*z-index: -1;*/
+        /*background-color: transparent !important;*/
+    }
+
+    #contact{
+        background-color: #ffffff;
+        position: absolute;
+        top: 6000px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #footer{
+        margin-bottom: 0 !important;
+        border-radius: 0;
+        background-color: #3B3B3B;
+        height: 120px;
+    }
+
+    #footer p{
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 10pt;
+    }
+
+    #linkContainer{
+        padding-left: 50px;
+        margin-top: 500px;
+        position: fixed;
+        /*position: absolute;*/
+        /*top: 450px;*/
+        /*left: 70px;*/
+        /*z-index: 0;*/
+    }
+
+    #aboutMe{
+        /*background-color: green;*/
+    }
+
+    #contactDetails{
+        padding-left: 50px !important;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 700px) and (min-width: 660px)    {
     #myTechnicalInfo{
         padding-left: 50px !important;
         padding-right: 50px !important;
@@ -379,16 +536,315 @@ body{
 
     .wrapper {padding: 20px 20px;}
 
-    .parent {
-        width: 340px;
-        margin: 10px;
-        height: 350px;
-        border: 1px solid blue;
+    #projectRow{
+        /*background-color: red;*/
+        /*margin: 0 auto;*/
+        padding-left: 100px !important;
+    }
+
+    #aboutMe{
+        /*background-color: red;*/
+    }
+
+    #background_container2{
+        position: absolute;
+        top: 6600px;
+        /*margin-top: 2000px;*/
+        width: 110%;
+        height:620px;
         overflow: hidden;
-        position: relative;
-        float: left;
-        display: inline-block;
-        cursor: pointer;
-        background-color: red;
+        /*z-index: -1;*/
+        /*background-color: transparent !important;*/
+    }
+
+    #contact{
+        background-color: #ffffff;
+        position: absolute;
+        top: 7200px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #footer{
+        margin-bottom: 0 !important;
+        border-radius: 0;
+        background-color: #3B3B3B;
+        height: 120px;
+    }
+
+    #footer p{
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 10pt;
+    }
+
+    #linkContainer{
+        padding-left: 50px;
+        margin-top: 500px;
+        position: fixed;
+        /*position: absolute;*/
+        /*top: 450px;*/
+        /*left: 70px;*/
+        /*z-index: 0;*/
+    }
+
+    #typewriter{
+        text-align: left;
+        color:#fff !important;
+        padding-top:5em;
+        vertical-align: text-top !important;
+        font-weight: 400;
+        font-size: 28pt !important;
+        text-shadow: 1px 1px #000;
+    }
+
+    #contactDetails{
+        padding-left: 50px !important;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 660px) and (min-width: 600px)    {
+    #myTechnicalInfo{
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+        /*background-color: red;*/
+    }
+
+    .wrapper {padding: 20px 20px;}
+
+    #projectRow{
+        /*background-color: red;*/
+        /*margin: 0 auto;*/
+        padding-left: 100px !important;
+    }
+
+    #aboutMe{
+        /*background-color: purple;*/
+    }
+
+    .dateGap1 span{
+        font-size: 12pt;
+        font-weight: 700;
+    }
+
+    #background_container2{
+        position: absolute;
+        top: 6700px;
+        /*margin-top: 2000px;*/
+        width: 110%;
+        height:620px;
+        overflow: hidden;
+        /*z-index: -1;*/
+        /*background-color: transparent !important;*/
+    }
+
+    #contact{
+        background-color: #ffffff;
+        position: absolute;
+        top: 7200px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #footer{
+        margin-bottom: 0 !important;
+        border-radius: 0;
+        background-color: #3B3B3B;
+        height: 120px;
+    }
+
+    #footer p{
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 10pt;
+    }
+
+    #linkContainer{
+        padding-left: 50px;
+        margin-top: 500px;
+        position: fixed;
+        /*position: absolute;*/
+        /*top: 450px;*/
+        /*left: 70px;*/
+        /*z-index: 0;*/
+    }
+
+    #typewriter{
+        text-align: left;
+        color:#fff !important;
+        padding-top:5em;
+        vertical-align: text-top !important;
+        font-weight: 400;
+        font-size: 28pt !important;
+        text-shadow: 1px 1px #000;
+    }
+
+    #contactDetails{
+        padding-left: 50px !important;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 500px)    {
+    #myTechnicalInfo{
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+        /*background-color: red;*/
+    }
+
+    .wrapper {padding: 20px 20px;}
+
+    #projectRow{
+        /*background-color: red;*/
+        /*margin: 0 auto;*/
+        padding-left: 100px !important;
+    }
+
+    #aboutMe{
+        /*background-color: deeppink;*/
+    }
+
+    .dateGap1 span{
+        font-size: 12pt;
+        font-weight: 700;
+    }
+
+    #background_container2{
+        position: absolute;
+        top: 6950px;
+        /*margin-top: 2000px;*/
+        width: 110%;
+        height:620px;
+        overflow: hidden;
+        /*z-index: -1;*/
+        /*background-color: transparent !important;*/
+    }
+
+    #contact{
+        background-color: #ffffff;
+        position: absolute;
+        top: 7500px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #footer{
+        margin-bottom: 0 !important;
+        border-radius: 0;
+        background-color: #3B3B3B;
+        height: 120px;
+    }
+
+    #footer p{
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 10pt;
+    }
+
+    #linkContainer{
+        padding-left: 50px;
+        margin-top: 500px;
+        position: fixed;
+        /*position: absolute;*/
+        /*top: 450px;*/
+        /*left: 70px;*/
+        /*z-index: 0;*/
+    }
+
+    #typewriter{
+        text-align: left;
+        color:#fff !important;
+        padding-top:5em;
+        vertical-align: text-top !important;
+        font-weight: 400;
+        font-size: 28pt !important;
+        text-shadow: 1px 1px #000;
+    }
+
+    .typewrite{
+        text-align: center;
+        color: #0AB8F5 !important;
+        padding-top:10em;
+        vertical-align: super !important;
+        font-weight: 300;
+    }
+
+    #contactDetails{
+        padding-left: 50px !important;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 500px)  {
+    #myTechnicalInfo{
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+        /*background-color: red;*/
+    }
+
+    .wrapper {padding: 20px 20px;}
+
+    #projectRow{
+        /*background-color: blue;*/
+        /*margin: 0 auto;*/
+        padding-left: 50px !important;
+    }
+
+    #aboutMe{
+        /*background-color: blue;*/
+    }
+
+    #background_container2{
+        position: absolute;
+        top: 7000px;
+        /*margin-top: 2000px;*/
+        width: 110%;
+        height:620px;
+        overflow: hidden;
+        /*z-index: -1;*/
+        /*background-color: transparent !important;*/
+    }
+
+    #contact{
+        background-color: #ffffff;
+        position: absolute;
+        top: 7700px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .dateGap1 span{
+        font-size: 10pt;
+        font-weight: 700;
+    }
+
+    #linkContainer{
+        padding-left: 50px;
+        margin-top: 500px;
+        position: fixed;
+        /*position: absolute;*/
+        /*top: 450px;*/
+        /*left: 70px;*/
+        /*z-index: 0;*/
+    }
+
+    #typewriter{
+        text-align: left;
+        color:#fff !important;
+        padding-top:5em;
+        vertical-align: text-top !important;
+        font-weight: 400;
+        font-size: 28pt !important;
+        text-shadow: 1px 1px #000;
+    }
+
+    .typewrite{
+        text-align: center;
+        color: #0AB8F5 !important;
+        padding-top:10em;
+        vertical-align: super !important;
+        font-weight: 300;
+    }
+
+    #contactDetails{
+        padding-left: 50px !important;
+        margin-bottom: 50px;
     }
 }

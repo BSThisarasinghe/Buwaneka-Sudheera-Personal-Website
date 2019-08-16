@@ -350,14 +350,14 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="text-right dateGap">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div class="dateGap1">
                             <span class="label label-danger">2017 Sept 09 To 2018 April 27</span>
                             <!--                           <h1 class="text-right"> 2017 Sept 09 To 2018 April 27</h1>-->
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <p class="text-left">I worked at Omobio as a Full Stack developer. While I was working there, I
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <p class="dateGap2">I worked at Omobio as a Full Stack developer. While I was working there, I
                             worked with React
                             Native, Yii and ExtJs technologies. I contributed to Dialog Sales app, DigiReach and KYC
                             projects.</p>
@@ -483,14 +483,14 @@
     </div>
     <div class="row" id="contact">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="container" style="padding-left: 150px; margin-bottom: 50px;">
+            <div class="container" id="contactDetails">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <h1 class="text-center titleDetails">CONTACT ME</h1>
                     </div>
                 </div>
                 <div class="row" id="contactInfo">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>&nbsp;&nbsp;Godaparagaha
                             watta, Yatalamatta, Galle</p><br/>
 
@@ -500,7 +500,7 @@
                         </p><br/>
                         <p><i class="fa fa-skype" style="font-size: 15pt;"></i>&nbsp;&nbsp;buwaneka.sudheera</p><br/>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <h1 class="subtitle" style="margin-top: 0 !important;">Write to us</h1>
