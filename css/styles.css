@@ -157,25 +157,25 @@ body{
 }
 
 .bgThree{
-    background-image: url("../images/slconstructions.PNG");
+    background-image: url("../images/survey.PNG");
     background-size: cover;
     overflow: hidden;
 }
 
 .bgFour{
-    background-image: url("../images/slconstructions.PNG");
+    background-image: url("../images/tudawe.PNG");
     background-size: cover;
     overflow: hidden;
 }
 
 .bgFive{
-    background-image: url("../images/slconstructions.PNG");
+    background-image: url("../images/cbr.PNG");
     background-size: cover;
     overflow: hidden;
 }
 
 .bgSix{
-    background-image: url("../images/slconstructions.PNG");
+    background-image: url("../images/myweb.PNG");
     background-size: cover;
     overflow: hidden;
 }
@@ -196,7 +196,7 @@ body{
 .child {
     height: 100%;
     width: 100%;
-    background-size: cover;
+    /*background-size: cover;*/
     background-repeat: no-repeat;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
@@ -218,7 +218,7 @@ body{
     right: 0;
     height: 50px;
     cursor: pointer;
-    /*text-decoration: none;*/
+    text-decoration: none;
 }
 
 .parent:hover .child, .parent:focus .child {

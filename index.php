@@ -311,7 +311,8 @@
                         <div class="row" id="projectRow">
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 parent">
                                 <div class="bgOne child">
-                                    <a href="#">Los Angeles</a>
+                                    <a href="http://slconstruction.lk/">SL CONSTRUCTIONS</a><br><br>
+<!--                                    <p>Technologies</p>-->
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 parent">
