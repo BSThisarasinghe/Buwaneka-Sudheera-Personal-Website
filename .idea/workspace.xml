@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5524e308-2283-4f3c-853f-1e863564e235" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change beforePath="$PROJECT_DIR$/includes/footer.php" afterPath="$PROJECT_DIR$/includes/footer.php" />
-      <change beforePath="$PROJECT_DIR$/includes/header.php" afterPath="$PROJECT_DIR$/includes/header.php" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change beforePath="$PROJECT_DIR$/js/parallax.js" afterPath="$PROJECT_DIR$/js/parallax.js" />
-    </list>
+    <list default="true" id="5524e308-2283-4f3c-853f-1e863564e235" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +103,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1026" />
@@ -198,15 +191,15 @@
       <workItem from="1565881121575" duration="11647000" />
       <workItem from="1565961705005" duration="12067000" />
       <workItem from="1566810786840" duration="25462000" />
-      <workItem from="1566899909411" duration="8516000" />
+      <workItem from="1566899909411" duration="9122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118628000" />
+    <option name="totallyTimeSpent" value="119234000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3374817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -417,13 +410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -463,6 +449,16 @@
         <state relative-caret-position="204">
           <caret line="90" column="20" lean-forward="true" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <folding>
+            <marker date="1561050970613" expanded="true" signature="1565:1591" ph="SELECT * FRO... main_details" />
+          </folding>
         </state>
       </provider>
     </entry>
