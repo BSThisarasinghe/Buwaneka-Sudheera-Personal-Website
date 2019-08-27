@@ -27,6 +27,25 @@ body{
     /*z-index: -1;*/
 }
 
+#navbar{
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: transparent;
+    border: 0;
+    width: 100% !important;
+    border-radius: 0;
+    color: #ffffff;
+}
+
+#navbar a{
+    color: #ffffff;
+}
+
+#navbar a:hover{
+    color: #000000;
+    background-color: #ffffff;
+}
+
 #background{
     background-image: url("../images/background.jpg");
     background-size: cover;
@@ -117,6 +136,25 @@ body{
     height: 10px;
 }
 
+.progressBar:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: initial;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
 .downloadCv{
     margin-top: 50px;
 }
@@ -129,7 +167,7 @@ body{
     padding-top: 15px;
 }
 
-#downloadButtonContainer button{
+#downloadButtonContainer a{
     font-size: 17pt;
     border-radius: 0;
     background-color: #000;
@@ -138,7 +176,7 @@ body{
     transition: .3s ease-in-out;
 }
 
-#downloadButtonContainer button:hover{
+#downloadButtonContainer a:hover{
     background-color: #3c3c3c;
     color: #fff;
     border: 1px solid #3c3c3c;
@@ -189,7 +227,9 @@ body{
     position: relative;
     float: left;
     display: inline-block;
-    cursor: pointer;
+    /*cursor: pointer;*/
+    padding-left: 0 !important;
+    padding-right: 0 !important;
     /*background-color: #28a4c9;*/
 }
 
@@ -204,24 +244,7 @@ body{
     transition: all .5s;
 }
 
-.child a {
-    display: none;
-    font-size: 35px;
-    color: #ffffff !important;
-    font-family: sans-serif;
-    text-align: center;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 50px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.parent:hover .child, .parent:focus .child {
+.parent:hover > .child, .parent:focus > .child {
     -ms-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
@@ -229,11 +252,52 @@ body{
     transform: scale(1.2);
 }
 
+.parent:hover > .child .link, .parent:focus > .child .link {
+    -ms-transform: scale(0.7) !important;
+    -moz-transform: scale(0.7) !important;
+    -webkit-transform: scale(0.7) !important;
+    -o-transform: scale(0.7) !important;
+    transform: scale(0.7) !important;
+}
+
+.link {
+    display: none;
+    font-size: 25px;
+    color: #ffffff !important;
+    font-family: sans-serif;
+    /*text-align: center;*/
+    margin-top: 40px;
+    /*margin-left: 10px;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    /*cursor: pointer;*/
+    text-decoration: none;
+}
+
+.link a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.link b{
+    margin-left: 10px;
+}
+
+.link span{
+    margin-left: 30px;
+    font-weight: 300;
+}
+
 .parent:hover .child:before, .parent:focus .child:before {
     display: block;
 }
 
-.parent:hover a, .parent:focus a {
+.parent:hover p, .parent:focus p {
     display: block;
 }
 
@@ -249,6 +313,7 @@ body{
 }
 
 .hello {display: none}
+
 
 .dateGap1{
     text-align: right;

@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<div class="row" style="margin: 0 !important; width: 100% !important; padding: 0 !important; position: absolute; z-index: 1">
+<div class="row" style="margin: 0 !important; width: 100% !important; padding: 0 !important; position: fixed; z-index: 1; border-radius: 0 !important;" id="navbarContainer">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin: 0 !important; width: 100% !important; padding: 0 !important;">
-        <nav class="navbar navbar-default" style="margin: 0 !important; padding: 0 !important; background-color: transparent; border: 0; width: 100% !important;">
+        <nav class="navbar navbar-default" id="navbar">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -27,10 +27,13 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Dashboard <span class="sr-only">(current)</span></a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="logout.php">Sign Out</a></li>
+                        <li><a href="#home" id="homeButton"><b>HOME</b></a></li>
+                        <li><a href="#aboutMe" id="aboutButton"><b>ABOUT</b></a></li>
+                        <li><a href="#works" id="workButton"><b>WORKS</b></a></li>
+                        <li><a href="#experience" id="experienceButton"><b>EXPERIENCE</b></a></li>
+                        <li><a href="#contact" id="contactButton"><b>GET IN TOUCH</b></a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->

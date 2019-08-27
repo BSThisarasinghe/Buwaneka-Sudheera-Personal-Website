@@ -4,10 +4,24 @@
         <p class="text-center">Developed/Designed By Buwaneka Sudheera Thisarasinghe</p>
     </div>
 </div>
-<!--</div>-->
+<script>
+    window.onscroll = function () {
+        myFunction();
+    };
+
+    function myFunction() {
+        var scrollLength = window.pageYOffset
+        if (scrollLength > 450) {
+            document.getElementById("navbar").style.backgroundColor = "#000";
+        } else {
+            document.getElementById("navbar").style.backgroundColor = "transparent";
+        }
+
+    }
+</script>
+
+
 <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/parallax.js"></script>
-</body>
-</html>

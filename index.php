@@ -1,11 +1,41 @@
 <?php include 'includes/db.php' ?>
 <?php require_once("includes/sessions.php"); ?>
 <?php require_once("includes/functions.php"); ?>
-<?php //confirm_logged_in(); ?>
+<?php
+if (!empty($_GET['file'])) {
+    $filename = basename($_GET['file']);
+    $filepath = 'download/' . $filename;
+    if (!empty($filename) && file_exists($filepath)) {
+        header('Cache-Control: public');
+        header('Content-Description: File Transfer');
+        header("Content-Disposition: attachment; filename=$filename");
+        header('Content-Type: application/zip');
+        header('Content-Transfer-Encoding: binary');
 
+        readfile($filepath);
+        exit;
+    } else {
+        echo "This file doesn't exist.";
+    }
+}
+
+if (isset($_POST['submit'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $msg = $_POST['message'] . " - " . $name;
+
+    $headers = "From: " . $_POST['email'];
+
+//    mail($to,$subject,$txt,$headers);
+
+    mail("sudheerabuwaneka@gmail.com", $subject, $msg, $headers);
+}
+
+?>
+<?php include 'includes/header.php'; ?>
 <div class="container-fluid" id="whole">
-    <?php include 'includes/header.php'; ?>
-    <div class="row">
+    <div class="row" id="home">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="background_container">
             <div id="background">
                 <h1 id="typewriter">
@@ -32,18 +62,18 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="details">
-                        I'm B.S.Thisarasinghe, a PHP developer in Sri Lanka. I'm working as a software engineer in one
-                        of the leading software companies in Sri Lanka. My main responsibilities are solving the
-                        technical issues of PHP applications and ensuring successful project delivery on time. I work
-                        with both local and foreign developers helping them with programming and other technical
-                        matters. I am able to customize PHP applications that are based on simple architectures or those
-                        that follow the MVC architecture. I have good experience working with diverse software
-                        development tools and frameworks including Core PHP, Laravel,Yii, Codeigniter, Zend Framework
-                        and Symfony.
+                        I'm B.S.Thisarasinghe, a full stack developer in Sri Lanka. I have worked as a software
+                        engineer intern in one of the leading software companies in Sri Lanka. My main responsibilities
+                        were developing different parts of the application I am working on and ensuring successful
+                        project delivery on time. I have worked for lots of customers helping them with their products.
+                        I have worked as a front-end and a backend developer with technologies such as PHP, React-Native
+                        and Java. Further, I have completed a research under the topic of Task scheduling on fog
+                        computing environment using Whale Optimization Algorithm. I did this research on the purpose of
+                        managing energy in fog environment.
                         <br/><br/>AND.... ..
                         <br/><br/>
-                        I designed this site so you can get to know me on a personal level.My facination with experience
-                        developments, some fun works, my photography, my blog, my favorite quotes, and so much more.
+                        I designed this site so you can get an idea about me on a personal level. My works, my
+                        interests, the experience I have got and so much more.
                     </div>
                 </div>
                 <div class="row">
@@ -296,12 +326,12 @@
                         <h1>Download My CV as Pdf</h1>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="downloadButtonContainer">
-                        <button class="btn btn-danger">DOWNLOAD</button>
+                        <a href="index.php?file=Buwaneka_Sudheera.pdf" class="btn btn-danger">DOWNLOAD</a>
                     </div>
                 </div>
             </div>
             <div class="container">
-                <div class="row">
+                <div class="row" id="works">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -311,33 +341,74 @@
                         <div class="row" id="projectRow">
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 parent">
                                 <div class="bgOne child">
-                                    <a href="http://slconstruction.lk/">SL CONSTRUCTIONS</a><br><br>
-<!--                                    <p>Technologies</p>-->
+                                    <p class="link">
+                                        <a href="http://slconstruction.lk/">SL CONSTRUCTIONS</a><br><br>
+                                        <b>Technologies</b><br/>
+                                        <span>PHP</span><br/>
+                                        <span>Laravel Framework</span><br/>
+                                        <span>MySQL</span><br/>
+                                        <span>Bootstrap</span><br/>
+                                        <span>HTML/CSS</span>
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 parent">
                                 <div class="bgTwo child">
-                                    <a href="#">Los Angeles</a>
+                                    <p class="link">
+                                        <a href="http://aduvata.lk/">Aduvata.lk</a><br><br>
+                                        <b>Technologies</b><br/>
+                                        <span>PHP</span><br/>
+                                        <span>Laravel Framework</span><br/>
+                                        <span>MySQL</span><br/>
+                                        <span>Bootstrap</span><br/>
+                                        <span>HTML/CSS</span>
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 parent">
                                 <div class="bgThree child">
-                                    <a href="#">Los Angeles</a>
+                                    <p class="link">
+                                        <a href="">Website Survey department</a><br><br>
+                                        <b>Technologies</b><br/>
+                                        <span>PHP</span><br/>
+                                        <span>MySQL</span><br/>
+                                        <span>Bootstrap</span><br/>
+                                        <span>HTML/CSS</span>
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 parent">
                                 <div class="bgFour child">
-                                    <a href="#">Los Angeles</a>
+                                    <p class="link">
+                                        <a href="">File management app</a><br><br>
+                                        <b>Technologies</b><br/>
+                                        <span>PHP</span><br/>
+                                        <span>React Native</span><br/>
+                                        <span>MySQL</span><br/>
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 parent">
                                 <div class="bgFive child">
-                                    <a href="#">Los Angeles</a>
+                                    <p class="link">
+                                        <a href="">Colombo bus routes</a><br><br>
+                                        <b>Technologies</b><br/>
+                                        <span>PHP</span><br/>
+                                        <span>React Native</span><br/>
+                                        <span>MySQL</span><br/>
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 parent">
                                 <div class="bgSix child">
-                                    <a href="#">Los Angeles</a>
+                                    <p class="link">
+                                        <a href="">BUWANEKASUDHEERA.COM</a><br><br>
+                                        <b>Technologies</b><br/>
+                                        <span>PHP</span><br/>
+                                        <span>MySQL</span><br/>
+                                        <span>Bootstrap</span><br/>
+                                        <span>HTML/CSS</span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -345,7 +416,7 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row" style="margin-bottom: 20px;">
+                <div class="row" id="experience" style="margin-bottom: 20px;">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <h1 class="text-center titleDetails">Experience</h1>
                     </div>
@@ -510,7 +581,7 @@
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="form-group">
-                                    <form method="post" action="">
+                                    <form method="post" action="index.php">
                                         <input type="text" name="name" placeholder="Your Name"
                                                class="form-control inputField">
                                         <input type="email" name="email" placeholder="Email"
@@ -533,4 +604,5 @@
     </div>
 
 </div>
-
+</body>
+</html>

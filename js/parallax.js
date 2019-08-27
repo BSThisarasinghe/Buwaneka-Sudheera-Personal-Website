@@ -8,27 +8,30 @@ $(document).ready(function() {
         return false;
     });
 
-    $('a#next').click(function(){
-        $('html, body').animate({ scrollTop:$('#title2').offset().top }, 1000);
+    $('a#homeButton').click(function(){
+        $('html, body').animate({ scrollTop:$('#home').offset().top }, 1000);
         return false;
     });
 
-    $('a#explore').click(function(){
-        $('html, body').animate({ scrollTop:$('#joinUs').offset().top }, 1000);
+    $('a#aboutButton').click(function(){
+        $('html, body').animate({ scrollTop:$('#aboutMe').offset().top }, 1000);
         return false;
     });
 
-    $('a#questions').click(function(){
-        $('html, body').animate({ scrollTop:$('#form').offset().top }, 1000);
+    $('a#workButton').click(function(){
+        $('html, body').animate({ scrollTop:$('#works').offset().top }, 1000);
         return false;
     });
 
-    $('a#arrow').click(function(){
-        $('html, body').animate({ scrollTop:$('#header').offset().top }, 1000);
+    $('a#experienceButton').click(function(){
+        $('html, body').animate({ scrollTop:$('#experience').offset().top }, 1000);
         return false;
     });
 
-
+    $('a#contactButton').click(function(){
+        $('html, body').animate({ scrollTop:$('#contact').offset().top }, 1000);
+        return false;
+    });
 });
 
 
@@ -37,5 +40,4 @@ function parallax(){
     $('#background_container').css('top', (0 - (scrollPosition* 0.2))+'px');
     $('#linkContainer').css('top', (450 - (scrollPosition* 0.2))+'px');
     $('#getToKnowMe').css('top', (450 - (scrollPosition* 0.2))+'px');
-    // $('#aboutMe').css('top', (620 - (scrollPosition* 1))+'px');
 }
