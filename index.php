@@ -528,21 +528,21 @@ if (isset($_POST['submit'])) {
                             <div class="row">
                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                                     <a href="https://www.linkedin.com/in/buwaneka-thisarasinghe/"
-                                       class="btn btn-default social_icons"><i class="fa fa-linkedin"
+                                       class="btn btn-default social_icons"><i class="fab fa-linkedin-in"
                                                                                style="font-size: 50px; color: #ffffff"></i></a>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                                     <a href="https://www.facebook.com/BuwanekaSudheera"
-                                       class="btn btn-default social_icons"><i class="fa fa-facebook"
+                                       class="btn btn-default social_icons"><i class="fab fa-facebook-f"
                                                                                style="font-size: 50px; color: #ffffff"></i></a>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                                     <a href="https://github.com/BSThisarasinghe" class="btn btn-default social_icons"><i
-                                                class="fa fa-git" style="font-size: 50px; color: #ffffff"></i></a>
+                                                class="fab fa-github" style="font-size: 50px; color: #ffffff"></i></a>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                                     <a href="https://stackoverflow.com/users/6574784/buwaneka-sudheera"
-                                       class="btn btn-default social_icons"><i class="fa fa-stack-overflow"
+                                       class="btn btn-default social_icons"><i class="fab fa-stack-overflow"
                                                                                style="font-size: 50px; color: #ffffff"></i></a>
                                 </div>
                             </div>
@@ -570,7 +570,7 @@ if (isset($_POST['submit'])) {
                                  aria-hidden="true"></span>&nbsp;&nbsp;071 259 9198</p><br/>
                         <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;&nbsp;sudheerabuwaneka@gmail.com
                         </p><br/>
-                        <p><i class="fa fa-skype" style="font-size: 15pt;"></i>&nbsp;&nbsp;buwaneka.sudheera</p><br/>
+                        <p><i class="fab fa-skype" style="font-size: 15pt;"></i>&nbsp;&nbsp;buwaneka.sudheera</p><br/>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="row">
@@ -583,13 +583,13 @@ if (isset($_POST['submit'])) {
                                 <div class="form-group">
                                     <form method="post" action="index.php">
                                         <input type="text" name="name" placeholder="Your Name"
-                                               class="form-control inputField">
+                                               class="form-control inputField" required />
                                         <input type="email" name="email" placeholder="Email"
-                                               class="form-control inputField"/>
+                                               class="form-control inputField" required />
                                         <input type="text" name="subject" placeholder="Subject"
-                                               class="form-control inputField"/>
+                                               class="form-control inputField" required />
                                         <textarea class="form-control inputField" name="message" placeholder="Message"
-                                                  rows="4" cols="50"></textarea>
+                                                  rows="4" cols="50" required></textarea>
                                         <input type="submit" name="submit" value="SEND" class="btn btn-info"
                                                id="submitbutton"/>
                                     </form>
