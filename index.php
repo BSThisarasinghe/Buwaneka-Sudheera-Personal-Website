@@ -1,6 +1,3 @@
-<?php include 'includes/db.php' ?>
-<?php require_once("includes/sessions.php"); ?>
-<?php require_once("includes/functions.php"); ?>
 <?php
 if (!empty($_GET['file'])) {
     $filename = basename($_GET['file']);
